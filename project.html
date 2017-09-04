@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Knowledge Management Platform using JavaScript</title>
+<script src="ScriptFile.js"></script>
+<link rel="stylesheet" href="style.css">
+<head>
+</head>
+<body background="images/back.jpg">
+	<div>
+	<img src="images/ensisa.png" height="50px" width="300px" style="margin-left:20px;margin-top:25px">
+	</div>
+	<div class="content">
+		<fieldset style="border-color:#000000;border-width:5px">
+			<legend style="color:#0338ff">Searching From Database</legend>
+			<p>Check Data: <input type="text" id="checkExist" value=''></p>
+			<button  class="content__cta" onclick="checkData()">Search</button>
+			<p>Result: <span id="demo" style="color:#3c66ff;font-size:20px"></span></p>
+			<fieldset style="border-width:3px">
+				<legend style="color:#0fb943">Example</legend>
+				<ul>
+					<li>Rule 1: Ketan friend Rahul</li>
+					<li>Rule 2: Ketan friend ?</li>
+					<li>Rule 3: Ketan ? Rahul</li>
+					<li>Rule 4: Ketan friend ? && ? age 25</li>
+				</ul>
+			</fieldset>
+		</fieldset>
+		<br/>
+		<fieldset style="border-color:#000000;border-width:5px">
+			<legend style="color:#0338ff">Put Data into Database</legend>
+			<p>Add Data: <input type="text" id="addData" value=''></p>
+			<button  class="content__cta" onclick="addFunction_data()">Insert Data</button>
+			<p>Result: <span id="demo_1" style="color:#3c66ff;font-size:20px"></span></p>
+			<fieldset style="border-width:3px">
+				<legend style="color:#0fb943">Example</legend>
+				<ul>
+					<li>Rule 1: Ketan friend Rahul</li>
+					<li>Rule 2: Ketan live Mulhouse</li>
+				</ul>
+			</fieldset>
+		</fieldset>
+		<br/>
+		<fieldset style="border-color:#000000;border-width:5px">
+			<legend style="color:#0338ff">Remove Data From Database</legend>
+			<p>Remove Data: <input type="text" id="removeData" value=''></p>
+			<button  class="content__cta" onclick="removeFunction()">Remove	Data</button>
+			<p>Result: <span id="demo_2" style="color:#3c66ff;font-size:20px"></span></p>
+			<fieldset style="border-width:3px">
+				<legend style="color:#0fb943">Example</legend>
+				<ul>
+					<li>Rule 1: Ketan live Mulhouse</li>
+				</ul>
+			</fieldset>
+		</fieldset>
+	</div>
+</body>
+</html>
